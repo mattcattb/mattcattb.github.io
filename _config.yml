@@ -35,10 +35,10 @@ social:
   email: m.boughton@ufl.edu # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://github.com/username # change to your github homepage
+    - https://github.com/mattcattb # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
-    - https://www.linkedin.com/in/matthew-boughton-1228111a5/
+    - https://www.linkedin.com/in/matthew-boughton-1228111a5
 
 google_site_verification: # fill in to your verification string
 
