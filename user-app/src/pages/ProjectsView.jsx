@@ -2,7 +2,7 @@ import React from 'react'
 import { projects } from '../assets/text/projects'
 
 
-export default function Projects() {
+export default function ProjectsView() {
   return (
     <div className='projects-container'>
       <h1 className='ProjectsTitle'>Projects</h1>

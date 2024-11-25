@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 
-const BlogPost = ({ posts }) => {
+const BlogPostView = ({ posts }) => {
   const { id } = useParams();
   const [content, setContent] = useState('');
 
@@ -23,4 +23,4 @@ const BlogPost = ({ posts }) => {
   );
 };
 
-export default BlogPost;
+export default BlogPostView;

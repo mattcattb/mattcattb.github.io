@@ -1,8 +1,8 @@
 // routesConfig.js
 import HomeView from './pages/HomeView';
-import Blog from './pages/Blog';
-import BlogPost from './pages/BlogPost';
-import Projects from './pages/Projects';
+import BlogPostView from './pages/BlogPostView';
+import ProjectsView from './pages/ProjectsView';
+import BlogHomeView from './pages/BlogPostView';
 
 export const links = [
   { to: '/', name: 'Home' },
@@ -10,13 +10,13 @@ export const links = [
   { to: '/blog', name: 'Blog' },
 ];
 
-export const routes = [
-  { path: '/', element: <HomeView /> },
-  { path: '/projects', element: <Projects /> },
-  { path: '/blog', element: <Blog /> },
-  { path: '/blog/:id', element: <BlogPost /> },
-];
-
 export const posts = [
   { id: 'post1', title: 'Example Post', file: '/blog-posts/post1.md' },
+];
+
+export const routes = [
+  { path: '/', element: <HomeView /> },
+  { path: '/projects', element: <ProjectsView /> },
+  { path: '/blog', element: <BlogHomeView posts={posts}/> },
+  { path: '/blog/:id', element: <BlogPostView posts={posts}/> },
 ];

@@ -2,7 +2,7 @@ import React from 'react'
 import BlogList from '../components/BlogList'
 
 
-export default function Blog({posts}) {
+export default function BlogHomeView({posts}) {
   return (
     <div>
       <h1>Blog</h1>
