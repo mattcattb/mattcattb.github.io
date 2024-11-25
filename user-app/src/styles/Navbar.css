@@ -1,0 +1,39 @@
+/* Navbar.css */
+.navbar {
+    background-color: rgb(193, 226, 227);
+    padding: 2vh 0;
+  }
+  
+  .nav-list {
+    display: flex;
+    justify-content: space-evenly; /* Spreads out the nav items evenly */
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-item {
+    margin: 0 1rem; /* Add spacing between nav items */
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: black;
+    padding: 0.5rem 1rem;
+    background-color: white;
+    border-radius: 20%;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .nav-link:hover {
+    background-color: rgb(173, 206, 207);
+    color: white;
+  }
+  
+  .nav-link.active {
+    background-color: rgb(155, 190, 191); /* Highlight active link */
+    font-weight: bold;
+  }
+  
