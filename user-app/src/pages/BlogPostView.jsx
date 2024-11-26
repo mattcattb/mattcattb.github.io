@@ -3,6 +3,8 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 
+import '../styles/Blog.css'
+
 const BlogPostView = ({ posts }) => {
   const { id } = useParams();
   const [content, setContent] = useState('');

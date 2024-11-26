@@ -1,28 +1,26 @@
-import { Link } from 'react-router-dom';
+import React from 'react';
+import { Grid2, Box } from '@mui/material';
+import BlogPostCard from './BlogPostCard'; // Import BlogPostCard component
 
-export default function BlogList ({ posts }) {
-    return(
-    <div>
-        <h1>Blog</h1>
-        <ul>
-        {posts.map((post, index) => (
-            <BlogPostCard key={index} post={post} />
-        ))}
-        </ul>
-    </div>
-    );
-}
+import '../styles/Blog.css'
 
-
-function BlogPostCard ({ index, post }){
+export default function BlogList({ posts }) {
   return (
-    <div>
-        <li key={index}>
-            <h2>{post.title}</h2>
-            <p>{post.date}</p>
-            <p>{post.description}</p>
-          <Link to={`/blog/${post.id}`}>{post.title}</Link>
-        </li>
-    </div>
+    <Box sx={{ 
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      flexWrap: 'wrap',
+      gap: 2,
+      padding: 3 
+      }}>
+      <Grid2 container spacing={3} justifyContent={'center'}>
+        {posts.map((post, index) => (
+          <Grid2 item xs={12} sm={6} md={4} key={index}>
+            <BlogPostCard post={post} />
+          </Grid2>
+        ))}
+      </Grid2>
+    </Box>
   );
-};
+}

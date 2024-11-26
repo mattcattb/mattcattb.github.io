@@ -1,0 +1,114 @@
+
+.blog-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    text-align: center; 
+    min-height: 50vh; 
+    padding: 3rem;
+    gap: 4rem; 
+}
+
+.blog-home-text {
+    color: var(--text-secondary); /* Use theme-like variables if needed */
+    max-width: 600px;
+    font-size: 16px; /* Match MUI's 'body1' size */
+    line-height: 1.5;
+}
+
+/* Blog List Container */
+.blog-container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 16px;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Blog Card */
+.blog-card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Blog Title */
+.blog-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0 0 10px;
+    text-align: center;
+}
+
+/* Blog Date */
+.blog-date {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0 0 12px;
+    text-align: center;
+}
+
+/* Blog Description */
+.blog-description {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+/* Blog Link */
+.blog-link {
+    align-self: center;
+    padding: 8px 16px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.blog-link:hover {
+    background-color: #0056b3;
+}
+
+
+/* Style for the Link wrapping the card */
+.blog-card-link {
+    text-decoration: none; /* Removes underline from links */
+    color: inherit; /* Inherits text color from the parent */
+}
+
+/* Style for the Card component */
+.blog-card {
+    height: 100%; /* Ensures the card takes full height in its container */
+    display: flex; /* Enables flexbox layout */
+    flex-direction: column; /* Aligns items vertically */
+    justify-content: space-between; /* Spreads items evenly with space at both ends */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1); /* Creates a light shadow for depth */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effect for scale and shadow */
+    cursor: pointer; /* Changes cursor to pointer for better UX */
+}
+
+/* Hover effects for the card */
+.blog-card:hover {
+    transform: scale(1.05); /* Slightly increases card size */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Adds a more pronounced shadow */
+}
