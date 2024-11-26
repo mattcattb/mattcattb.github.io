@@ -1,23 +1,26 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom'; // NavLink for active link styling
+import { AppBar, Toolbar, Button } from '@mui/material';
+
+import { Link } from 'react-router-dom';
+
 import '../styles/Navbar.css';
 
-export default function Navbar({ links = [] }) { // Default value for links
+export default function Navbar({ links = [] }) { 
   return (
-    <nav className="navbar">
-      <ul className="nav-list">
-        {links.map(({ to, name }) => (
-          <li key={to} className="nav-item">
-            <NavLink
-              className="nav-link"
-              to={to}
-              activeClassName="active" // Add active styling class
-            >
-              {name}
-            </NavLink>
-          </li>
+    <AppBar position='sticky' color="primary">
+      <Toolbar>
+      {links.map(({ to, name }) => (
+          <Button 
+            key={to} 
+            component={Link} 
+            to={to} 
+            color="inherit" 
+            sx={{ marginRight: 2 }}
+          >
+            {name}
+          </Button>
         ))}
-      </ul>
-    </nav>
+      </Toolbar>
+    </AppBar>
   );
 }
