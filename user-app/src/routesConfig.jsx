@@ -5,22 +5,18 @@ import BlogHomeView from './pages/BlogHomeView';
 import BlogPostView from './pages/BlogPostView';
 import ExperienceView from './pages/ExperienceView'
 
+import blogPosts from './content/blogPosts.json';
+
 export const links = [
-  { to: '/', name: 'Home' },
   { to: '/projects', name: 'Projects' },
   { to: '/blog', name: 'Blog' },
   { to: '/experience', name: 'Experience'}
 ];
 
-export const posts = [
-  { id: 'post1', title: 'Example Post', file: '/blog-posts/post1.md' },
-  { id: 'post2', title: 'Another Post', file: '/blog-posts/post2.md' },
-];
-
 export const routes = [
   { path: '/', element: <HomeView /> },
   { path: '/projects', element: <ProjectsView /> },
-  { path: '/experience', element: <ExperienceView posts={posts}/> },
-  { path: '/blog', element: <BlogHomeView posts={posts}/> },
-  { path: '/blog/:id', element: <BlogPostView posts={posts}/> },
+  { path: '/experience', element: <ExperienceView posts={blogPosts}/> },
+  { path: '/blog', element: <BlogHomeView posts={blogPosts}/> },
+  { path: '/blog/:id', element: <BlogPostView posts={blogPosts}/> },
 ];

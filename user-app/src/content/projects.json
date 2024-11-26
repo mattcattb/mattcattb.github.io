@@ -1,0 +1,28 @@
+[
+    {
+      "id": "ABV",
+      "title": "ABV",
+      "date": "2024-11-25",
+      "description": "This is an example project.",
+      "link": "https://github.com/mattcattb/ABV_Agri_System",
+      "image": "abv.jpg",
+      "technologies": ["React", "Node.js", "MongoDB"]
+    },
+    {
+      "id": "project2",
+      "title": "Obscurify",
+      "date": "2024-11-26",
+      "description": "This is another example of a project.",
+      "link": "Obsc",
+      "technologies": ["Python", "Django"]
+    },
+    {
+      "id": "project3",
+      "title": "Project 3",
+      "date": "2024-11-27",
+      "description": "This is another example of a project.",
+      "link": "Obsc",
+      "technologies": ["JavaScript", "Express", "MySQL"]
+    }
+  ]
+  

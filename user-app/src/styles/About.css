@@ -6,6 +6,16 @@
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
+
+.about-container {
+    text-align: center;
+    padding: 4rem;
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 3rem;
+    border-radius: 2px;
+    background-color: #fff;
+}
   
 .about-section img {
     width: 150px;

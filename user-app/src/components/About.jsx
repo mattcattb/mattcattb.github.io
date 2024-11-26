@@ -1,22 +1,13 @@
 import React from 'react';
 import { Box, Typography, Avatar } from '@mui/material';
-import profile from '../assets/img/mattypfp.jpeg';
+
+import '../styles/About.css';
 
 export default function About() {
   return (
-    <Box 
-      sx={{ 
-        textAlign: 'center', 
-        padding: 4, 
-        maxWidth: 600, 
-        margin: 'auto', 
-        boxShadow: 3, 
-        borderRadius: 2, 
-        bgcolor: 'background.paper' 
-      }}
-    >
+    <Box className="about-container">
       <Avatar 
-        src={profile} 
+        src={"/mattypfp.jpeg"} 
         alt="Matthew Boughton" 
         sx={{ width: 120, height: 120, margin: 'auto', marginBottom: 2 }}
       />
