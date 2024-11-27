@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Grid, Typography } from '@mui/material';
+import { Box, Grid2, Typography } from '@mui/material';
 import ProjectCard from '../components/ProjectCard';
 import projectsData from '../content/projects.json';
 
@@ -14,19 +14,19 @@ export default function ProjectsView() {
         Projects
       </Typography>
 
-      <Grid 
+      <Grid2 
         container 
-        spacing={4} 
+        spacing={3} 
         justifyContent="center"
         alignItems="flex-start"
         className="max-w-screen-xl mx-auto"
       >
         {projectsData.map((project) => (
-          <Grid item key={project.id} xs={12} sm={6} md={4}>
+          <Grid2 item key={project.id} xs={12} sm={6} md={4}>
             <ProjectCard project={project} />
-          </Grid>
+          </Grid2>
         ))}
-      </Grid>
+      </Grid2>
     </Box>
   );
 }

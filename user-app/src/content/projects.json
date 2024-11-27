@@ -1,28 +1,48 @@
 [
     {
-      "id": "ABV",
-      "title": "ABV",
+      "id": "abv",
+      "title": "ABV Agriculture System",
       "date": "2024-11-25",
-      "description": "This is an example project.",
+      "description": "Jetson Nano System service for capturing images of strawberries.",
       "link": "https://github.com/mattcattb/ABV_Agri_System",
       "image": "abv.jpg",
       "technologies": ["React", "Node.js", "MongoDB"]
     },
     {
-      "id": "project2",
+      "id": "obs",
       "title": "Obscurify",
-      "date": "2024-11-26",
-      "description": "This is another example of a project.",
+      "date": "2024-05-26",
+      "description": "Authenticates users spotify to provide information.",
       "link": "Obsc",
-      "technologies": ["Python", "Django"]
+      "image": "obs.jpg",
+      "technologies": ["Python", "Django", "React", "SpotifyAPI"]
     },
     {
-      "id": "project3",
-      "title": "Project 3",
-      "date": "2024-11-27",
-      "description": "This is another example of a project.",
-      "link": "Obsc",
-      "technologies": ["JavaScript", "Express", "MySQL"]
+      "id": "msp",
+      "title": "Minesweeper",
+      "date": "2023-11-27",
+      "description": "Minesweeper in cpp.",
+      "link": "https://github.com/mattcattb/Cellular-Automata-Engine",
+      "image": "msp.jpg",
+      "technologies": ["C Plus Plus", "Make", "SFML"]
+    },
+    {
+      "id":"cel-aut",
+      "title": "Cellular Automata Engine",
+      "date": "2022-07-16",
+      "description": "This project is a cellular automata engine that can simulate a variety of different cellular automata rules using the model-view controller.",
+      "link": "https://github.com/mattcattb/Cellular-Automata-Engine",
+      "img": "cel-aut.jpg",
+      "technologies": ["Python", "Pygame"] 
+    },
+    {
+      "id": "gatschedule",
+      "title": "Gator Scheduler",
+      "date": "2024-12-05",
+      "description": "Full webapp using authentication for finding times that multiple users can get together and meet.",
+      "link": "https://github.com/mattcattb/ABV_Agri_System",
+      "image": "abv.jpg",
+      "technologies": ["React", "Node.js", "MongoDB", "Material-UI", "Express"]
     }
   ]
   
